@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>calculator</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+
+    <div class="calculator-wrapper">
+      <div class="calculator-container">
+        <div class="calculator">
+          <div class="calculator-result-wrapper">
+            <div class="rcalculator-esult-container">
+              <div class="calculator-result">
+                <div class="calculator-result-progress-wrapper">
+                  <div class="calculator-result-progress-container">
+                    <div class="calculator-result-progress">
+                    </div>
+                  </div>
+                </div>
+                <div class="calculator-result-answer-wrapper">
+                  <div class="calculator-result-answer-container">
+                    <div class="calculator-result-answer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calculator-line-wrapper">
+            <div class="calculator-line-container">
+              <div class="calculator-line">
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator-firstRow-wrapper">
+            <div class="calculator-firstRow-container">
+              <div class="calculator-firstRow">
+                <div class="button numbers calculator-firstRow-back" onclick="myFunction()" value="">←
+                </div>
+                <div class="button numbers calculator-firstRow-PlueMinus" onclick="myFunction()" value="">+/-
+                </div>
+                <div class="button numbers calculator-firstRow-percent" onclick="myFunction()" value="%">%
+                </div>
+                <div class="button numbers calculator-firstRow-division" onclick="myFunction()" value="/">/
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calculator-secondRow-wrapper">
+            <div class="calculator-secondRow-container">
+              <div class="calculator-secondRow">
+                <div class="button numbers calculator-secondRow-7" onclick="myFunction()" value="7">7
+                </div>
+                <div class="button numbers calculator-secondRow-8" onclick="myFunction()" value="8">8
+                </div>
+                <div class="button numbers calculator-secondRow-9" onclick="myFunction()" value="9">9
+                </div>
+                <div class="button numbers calculator-secondRow-multi" onclick="myFunction()" value="*">✕
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calculator-thirdRow-wrapper">
+            <div class="calculator-thirdRow-container">
+              <div class="calculator-thirdRow">
+                <div class="button numbers calculator-thirdRow-4" onclick="myFunction()" value="4">4
+
+                </div>
+                <div class="button numbers calculator-thirdRow-5" onclick="myFunction()" value="5">5
+                </div>
+                <div class="button numbers calculator-thirdRow-6" onclick="myFunction()" value="6">6
+                </div>
+                <div class="button numbers calculator-thirdRow-plus" onclick="myFunction()" value="+">+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calculator-fourthRow-wrapper">
+            <div class="calculator-fourthRow-container">
+              <div class="calculator-fourthRow">
+                <div class="button numbers calculator-fourthRow-1" onclick="myFunction()" value="1">1
+                </div>
+                <div class="button numbers calculator-fourthRow-2" onclick="myFunction()" value="2">2
+                </div>
+                <div class="button numbers calculator-fourthRow-3" onclick="myFunction()" value="3">3
+                </div>
+                <div class="button numbers calculator-fourthRow-minus" onclick="myFunction()" value="-">-
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calculator-lastRow-wrapper">
+            <div class="calculator-lastRow-container">
+              <div class="calculator-lastRow">
+                <div class="button numbers calculator-lastRow-dot" onclick="myFunction()" value=".">.
+                </div>
+                <div class="button numbers calculator-lastRow-0" onclick="myFunction()" value="0">0
+                </div>
+                <div class="button eval-button calculator-lastRow-equal" onclick="myFunction()" value="=">=
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
