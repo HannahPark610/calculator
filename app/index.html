@@ -29,13 +29,13 @@
               <div class="calculator-result">
                 <div class="calculator-result-progress-wrapper">
                   <div class="calculator-result-progress-container">
-                    <div class="calculator-result-progress">
+                    <div class="textview calculator-result-progress" name="textview">
                     </div>
                   </div>
                 </div>
                 <div class="calculator-result-answer-wrapper">
                   <div class="calculator-result-answer-container">
-                    <div class="calculator-result-answer">
+                    <div class="textview calculator-result-answer" name="textview">
                     </div>
                   </div>
                 </div>
@@ -52,13 +52,13 @@
           <div class="calculator-firstRow-wrapper">
             <div class="calculator-firstRow-container">
               <div class="calculator-firstRow">
-                <div class="button numbers calculator-firstRow-back" onclick="insert()" value="">←
+                <div class="button numbers calculator-firstRow-back" onclick="insert(C)" value="C">C
                 </div>
-                <div class="button numbers calculator-firstRow-PlueMinus" onclick="insert(+)" value="">+/-
+                <div class="button numbers calculator-firstRow-PlueMinus" onclick="insert(<)" value="<"><
                 </div>
-                <div class="button numbers calculator-firstRow-percent" onclick="insert(%)" value="%">%
+                <div class="button numbers calculator-firstRow-percent" onclick="insert('%')" value="%">%
                 </div>
-                <div class="button numbers calculator-firstRow-division" onclick="insert()" value="/">/
+                <div class="button numbers calculator-firstRow-division" onclick="insert('*')" value="*">✕
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="button numbers calculator-secondRow-9" onclick="insert(9)" value="9">9
                 </div>
-                <div class="button numbers calculator-secondRow-multi" onclick="insert(*)" value="*">✕
+                <div class="button numbers calculator-secondRow-multi" onclick="insert('-')" value="-">-
                 </div>
               </div>
             </div>
@@ -80,14 +80,14 @@
           <div class="calculator-thirdRow-wrapper">
             <div class="calculator-thirdRow-container">
               <div class="calculator-thirdRow">
-                <div class="button numbers calculator-thirdRow-4" onclick="myFunction()" value="4">4
+                <div class="button numbers calculator-thirdRow-4" onclick="insert(4)" value="4">4
 
                 </div>
-                <div class="button numbers calculator-thirdRow-5" onclick="myFunction()" value="5">5
+                <div class="button numbers calculator-thirdRow-5" onclick="insert(5)" value="5">5
                 </div>
-                <div class="button numbers calculator-thirdRow-6" onclick="myFunction()" value="6">6
+                <div class="button numbers calculator-thirdRow-6" onclick="insert(6)" value="6">6
                 </div>
-                <div class="button numbers calculator-thirdRow-plus" onclick="myFunction()" value="+">+
+                <div class="button numbers calculator-thirdRow-plus" onclick="insert('+')" value="+">+
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@
                 </div>
                 <div class="button numbers calculator-fourthRow-3" onclick="insert(3)" value="3">3
                 </div>
-                <div class="button numbers calculator-fourthRow-minus" onclick="insert(4)" value="-">-
+                <div class="button numbers calculator-fourthRow-minus" onclick="insert('←')" value="←">←
                 </div>
               </div>
             </div>
@@ -109,13 +109,15 @@
           <div class="calculator-lastRow-wrapper">
             <div class="calculator-lastRow-container">
               <div class="calculator-lastRow">
-                <div class="button numbers calculator-lastRow-dot" onclick="insert(.)" value=".">.
+                <div class="button numbers calculator-lastRow-dot" onclick="insert('.')" value=".">.
                 </div>
                 <div class="button numbers calculator-lastRow-0" onclick="insert(0)" value="0">0
                 </div>
                 <div class="button eval-button calculator-lastRow-equal-wrapper" >
-                  <div class="button eval-button calculator-lastRow-equal-container">
-                    <div class="button eval-button calculator-lastRow-equal" onclick="insert()" value="=">=
+                  <div class="button-label-wrapper calculator-lastRow-equal-container">
+                    <div class="button-label-container">
+                      <div class="button-label eval-button calculator-lastRow-equal" onclick="insert('=')" value="=">=
+                    </div>
                 </div>
               </div>
             </div>
