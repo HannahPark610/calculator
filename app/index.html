@@ -52,13 +52,13 @@
           <div class="calculator-firstRow-wrapper">
             <div class="calculator-firstRow-container">
               <div class="calculator-firstRow">
-                <div class="button numbers calculator-firstRow-back" onclick="insert(C)" value="C">C
+                <div class="button numbers calculator-firstRow-clear" id="clear" onclick="insert(C)" value="C">C
                 </div>
-                <div class="button numbers calculator-firstRow-PlueMinus" onclick="insert(<)" value="<"><
+                <div class="button numbers calculator-firstRow-plusMinus" id="plusMinus" onclick="insert(+/-)" value="+/-">+/-
                 </div>
-                <div class="button numbers calculator-firstRow-percent" onclick="insert('%')" value="%">%
+                <div class="button numbers calculator-firstRow-division" id="division" onclick="insert('%')" value="%">%
                 </div>
-                <div class="button numbers calculator-firstRow-division" onclick="insert('*')" value="*">✕
+                <div class="button numbers calculator-firstRow-multi" id="multi" onclick="insert('*')" value="*">✕
                 </div>
               </div>
             </div>
@@ -66,13 +66,13 @@
           <div class="calculator-secondRow-wrapper">
             <div class="calculator-secondRow-container">
               <div class="calculator-secondRow">
-                <div class="button numbers calculator-secondRow-7" onclick="insert(7)" value="7">7
+                <div class="button numbers calculator-secondRow-7" id="seven" onclick="insert(7)" value="7">7
                 </div>
-                <div class="button numbers calculator-secondRow-8" onclick="insert(8)" value="8">8
+                <div class="button numbers calculator-secondRow-8" id="eight" onclick="insert(8)" value="8">8
                 </div>
-                <div class="button numbers calculator-secondRow-9" onclick="insert(9)" value="9">9
+                <div class="button numbers calculator-secondRow-9" id="nine" onclick="insert(9)" value="9">9
                 </div>
-                <div class="button numbers calculator-secondRow-multi" onclick="insert('-')" value="-">-
+                <div class="button numbers calculator-secondRow-minus" id="minus" onclick="insert('-')" value="-">-
                 </div>
               </div>
             </div>
@@ -80,14 +80,14 @@
           <div class="calculator-thirdRow-wrapper">
             <div class="calculator-thirdRow-container">
               <div class="calculator-thirdRow">
-                <div class="button numbers calculator-thirdRow-4" onclick="insert(4)" value="4">4
+                <div class="button numbers calculator-thirdRow-4" id="four" onclick="insert(4)" value="4">4
 
                 </div>
-                <div class="button numbers calculator-thirdRow-5" onclick="insert(5)" value="5">5
+                <div class="button numbers calculator-thirdRow-5" id="five" onclick="insert(5)" value="5">5
                 </div>
-                <div class="button numbers calculator-thirdRow-6" onclick="insert(6)" value="6">6
+                <div class="button numbers calculator-thirdRow-6" id="six" onclick="insert(6)" value="6">6
                 </div>
-                <div class="button numbers calculator-thirdRow-plus" onclick="insert('+')" value="+">+
+                <div class="button numbers calculator-thirdRow-plus" id="plus" onclick="insert('+')" value="+">+
                 </div>
               </div>
             </div>
@@ -95,13 +95,13 @@
           <div class="calculator-fourthRow-wrapper">
             <div class="calculator-fourthRow-container">
               <div class="calculator-fourthRow">
-                <div class="button numbers calculator-fourthRow-1" onclick="insert(1)" value="1">1
+                <div class="button numbers calculator-fourthRow-1" id="one" onclick="insert(1)" value="1">1
                 </div>
-                <div class="button numbers calculator-fourthRow-2" onclick="insert(2)" value="2">2
+                <div class="button numbers calculator-fourthRow-2" id="two" onclick="insert(2)" value="2">2
                 </div>
-                <div class="button numbers calculator-fourthRow-3" onclick="insert(3)" value="3">3
+                <div class="button numbers calculator-fourthRow-3" id="three" onclick="insert(3)" value="3">3
                 </div>
-                <div class="button numbers calculator-fourthRow-minus" onclick="insert('←')" value="←">←
+                <div class="button numbers calculator-fourthRow-back" id="back" onclick="insert('←')" value="←">←
                 </div>
               </div>
             </div>
@@ -109,14 +109,14 @@
           <div class="calculator-lastRow-wrapper">
             <div class="calculator-lastRow-container">
               <div class="calculator-lastRow">
-                <div class="button numbers calculator-lastRow-dot" onclick="insert('.')" value=".">.
+                <div class="button numbers calculator-lastRow-dot" id="dot" onclick="insert('.')" value=".">.
                 </div>
-                <div class="button numbers calculator-lastRow-0" onclick="insert(0)" value="0">0
+                <div class="button numbers calculator-lastRow-0" id="ziro" onclick="insert(0)" value="0">0
                 </div>
                 <div class="button eval-button calculator-lastRow-equal-wrapper" >
                   <div class="button-label-wrapper calculator-lastRow-equal-container">
                     <div class="button-label-container">
-                      <div class="button-label eval-button calculator-lastRow-equal" onclick="insert('=')" value="=">=
+                      <div class="button-label eval-button calculator-lastRow-equal" id="equal" onclick="insert('=')" value="=">=
                     </div>
                 </div>
               </div>
