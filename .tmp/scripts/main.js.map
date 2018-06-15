@@ -1,1 +1,0 @@
-{"version":3,"sources":["main.js"],"names":["insert","num","alert"],"mappings":"AAAA,SAASA,MAAT,CAAgBC,GAAhB,EAAqB;AACnBC,QAAM,QAAQD,GAAd;AACD","file":"main.js","sourcesContent":["function insert(num) {\n  alert(\"Hi \" + num);\n}\n"]}
