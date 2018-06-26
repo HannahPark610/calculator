@@ -1,18 +1,18 @@
-// function insert(number) {
-//   var progressWindow = document.getElementById("resultProgress");
-//   var resultWindow = document.getElementById("resultAnswer");
-//   progressWindow.innerHTML += number;
-//   console.log(number);
-//
-// }
-//
+function insert(number) {
+  var progressWindow = document.getElementById("resultProgress");
+  var resultWindow = document.getElementById("resultAnswer");
+  progressWindow.innerHTML += number;
+  console.log(number);
+
+}
+
 function answer(){
   document.getElementById("resultProgress").value = eval(document.getElementById("equal").value);
 }
 
-function insert(number) {
-  var progressWindow = document.getElementsByClassName("button").innerHTML;
-}
+// function insert(number) {
+//   var progressWindow = document.getElementsByClassName("button").innerHTML;
+// }
 
 
 function clearall(){
