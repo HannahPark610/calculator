@@ -1,6 +1,6 @@
-// function insert(number) {
-//   var progressWindow = document.getElementById("resultProgress");
-//   var resultWindow = document.getElementById("resultAnswer");
+function insert(number) {
+  var progressWindow = document.getElementById("resultProgress");
+  var resultWindow = document.getElementById("resultAnswer");
 //   progressWindow.innerHTML += number;
 //   console.log(number);
 //

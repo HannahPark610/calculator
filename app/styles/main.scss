@@ -88,10 +88,15 @@ body {
         width:400px;
         height: 700px;
         background-color: white;
-        margin: 0;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        transition: transform 0.3 ease;
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0; margin: auto;
+        @media screen and (max-height: 800px) {
+          transform: scale(0.8);
+        }
+        @media screen and (max-height: 600px) {
+          transform: scale(0.6);
+        }
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         .calculator-result-wrapper {
           width: 400px;
