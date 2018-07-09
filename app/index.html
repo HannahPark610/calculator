@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -29,13 +29,13 @@
               <div class="calculator-result">
                 <div class="calculator-result-progress-wrapper">
                   <div class="calculator-result-progress-container">
-                    <div class="textview calculator-result-progress" name="textview" id="resultProgress">
+                    <div class="textview calculator-result-progress" name="textbox" id="resultProgress">
                     </div>
                   </div>
                 </div>
                 <div class="calculator-result-answer-wrapper">
                   <div class="calculator-result-answer-container">
-                    <div class="textview calculator-result-answer" name="textview" id="resultAnswer">
+                    <div class="textview calculator-result-answer" name="textbox" id="resultAnswer">
                     </div>
                   </div>
                 </div>
@@ -54,7 +54,7 @@
               <div class="calculator-firstRow">
                 <div class="button numbers calculator-firstRow-clear" id="clear" onclick="insert(C)" value="C">C
                 </div>
-                <div class="button numbers calculator-firstRow-plusMinus" id="plusMinus" onclick="insert(+/-)" value="+/-">+/-
+                <div class="button numbers calculator-firstRow-module" id="Module" onclick="insert(/)" value="/">/
                 </div>
                 <div class="button numbers calculator-firstRow-division" id="division" onclick="insert('%')" value="%">%
                 </div>
@@ -101,8 +101,6 @@
                 </div>
                 <div class="button numbers calculator-fourthRow-3" id="three" onclick="insert(3)" value="3">3
                 </div>
-                <div class="button numbers calculator-fourthRow-back" id="back" onclick="insert('←')" value="←">←
-                </div>
               </div>
             </div>
           </div>
@@ -148,7 +146,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <script src="scripts/calculator.js"></script>
     <!-- endbuild -->
   </body>
 </html>
